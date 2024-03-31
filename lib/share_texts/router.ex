@@ -11,7 +11,10 @@ defmodule ShareTexts.Router do
   plug(:dispatch)
 
   match _ do
-    page = EEx.eval_file("lib/application.html.eex", host: Application.fetch_env!(:share_texts, :host))
+    host = Application.fetch_env!(:share_texts, :host)
+    port = Application.fetch_env!(:share_texts, :port)
+
+    page = EEx.eval_file("lib/application.html.eex", host: "#{host}:#{port}")
     send_resp(conn, 200, page)
   end
 end

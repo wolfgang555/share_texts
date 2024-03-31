@@ -4,6 +4,7 @@
 <head>
   <title>Submit Text</title>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script> var host = "<%= host %>";  </script>
  <style>
     body {
@@ -28,9 +29,19 @@
       border: 1px solid #ccc;
       font-size: 16px;
     }
-  </style>
 
-</head>
+    /* 响应式设计的媒体查询 */
+    @media (max-width: 768px) {
+      form {
+        width: 90%; /* 在小屏幕上增加表单宽度 */
+      }
+
+      textarea {
+        height: 50vh; /* 在小屏幕上调整文本区域的高度 */
+        font-size: 14px; /* 在小屏幕上调整字体大小 */
+      }
+    }
+  </style>
 
 <body>
   <form action="#" method="post">

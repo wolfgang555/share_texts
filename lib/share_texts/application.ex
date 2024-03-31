@@ -18,13 +18,15 @@ defmodule ShareTexts.Application do
   @impl true
 
   def start(_type, _args) do
+    port = Application.get_env(:share_texts, :port, 3000) # 默认端口为 3000
+
     children = [
       {
         Plug.Cowboy,
         scheme: :http,
         plug: ShareTexts.Router,
         options: [
-          port: 3000,
+          port: port,
           dispatch: ShareTexts.Application.dispatcher
         ]
       },
