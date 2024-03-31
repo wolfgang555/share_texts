@@ -1,21 +1,5 @@
-# ShareTexts
+https://medium.com/@loganbbres/elixir-websocket-chat-example-c72986ab5778
 
-**TODO: Add description**
+重点参考这篇
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `share_texts` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:share_texts, "~> 0.1.0"}
-  ]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/share_texts>.
-
+https://hexdocs.pm/plug/Plug.Static.html

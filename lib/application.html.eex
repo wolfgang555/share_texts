@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Submit Text</title>
+  <meta charset="UTF-8">
+  <script> var host = "<%= host %>";  </script>
+ <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    form {
+      width: 70%;
+    }
+
+    textarea {
+      width: 100%;
+      height: 80vh;
+      margin-bottom: 20px;
+      padding: 10px;
+      box-sizing: border-box;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <form action="#" method="post">
+    <textarea id="messageBox">
+    </textarea>
+      <br>
+      <br>
+    <input type="submit" value="send" id="submitBtn">
+  </form>
+</body>
+  <script src="/static/js/application.js"></script>
+</html>

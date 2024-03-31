@@ -27,7 +27,12 @@ defmodule ShareTexts.Application do
           port: 3000,
           dispatch: ShareTexts.Application.dispatcher
         ]
-      }
+      },
+
+      Registry.child_spec(
+        keys: :duplicate,
+        name: Registry.ShareTexts
+      )
     ]
 
     opts = [strategy: :one_for_one, name: __MODULE__]
