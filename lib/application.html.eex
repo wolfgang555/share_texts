@@ -52,5 +52,5 @@
     <input type="submit" value="send" id="submitBtn">
   </form>
 </body>
-  <script src="/static/js/application.js"></script>
+  <script src="/static/js/application.js?v=2"></script>
 </html>
